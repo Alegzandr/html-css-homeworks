@@ -1,0 +1,8 @@
+/* Defines color depending on background color */
+@function set-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

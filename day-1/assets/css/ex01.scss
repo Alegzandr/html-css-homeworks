@@ -1,0 +1,115 @@
+@import "variables-ex01";
+@import "functions";
+
+body {
+  font-family: $font-stack;
+}
+
+.main-block {
+  background-color: $bg-color;
+  width: $square;
+  height: $square;
+  float: left;
+  margin: $margin;
+  color: set-color($bg-color);
+  font-size: 1rem;
+  text-align: center;
+
+  div {
+    font-size: .8em;
+  }
+}
+
+.main-block:nth-child(1), .main-block:nth-child(2) {
+  position: relative;
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.main-block:nth-child(2) {
+  p {
+    width: 100%;
+  }
+}
+
+.main-block:nth-child(3) {
+  position: relative;
+
+  div:nth-child(1) {
+    width: $small-square;
+    height: $small-square;
+    background-color: $top-right-color;
+    margin-left: calc(#{$square} - #{$small-square});
+  }
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  div:nth-child(3) {
+    width: $small-square;
+    height: $small-square;
+    background-color: $bottom-left-color;
+    margin-top: calc(#{$square} - 2 * #{$small-square});
+    margin-right: calc(#{$square} - #{$small-square});
+  }
+}
+
+.main-block:nth-child(4) {
+  position: relative;
+
+  div:nth-child(1) {
+    width: $small-square;
+    height: $small-rectangle;
+    background-color: $top-left-color;
+    color: set-color($top-left-color);
+
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  div:nth-child(2) {
+    width: $small-square;
+    height: $small-rectangle;
+    background-color: $top-right-color;
+
+    margin-left: calc(#{$square} - #{$small-square});
+    margin-top: -$small-rectangle;
+  }
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  div:nth-child(4) {
+    width: $small-square;
+    height: $small-rectangle;
+    background-color: $bottom-left-color;
+    color: set-color($bottom-left-color);
+
+    margin-top: calc(#{$square - 2 * $small-rectangle});
+  }
+
+  div:nth-child(5) {
+    width: $small-square;
+    height: $small-rectangle;
+    background-color: $bottom-right-color;
+    color: set-color($bottom-right-color);
+
+    margin-top: -$small-rectangle;
+    margin-left: calc(#{$square} - #{$small-square});
+  }
+}

@@ -1,0 +1,85 @@
+/* Main blocks */
+/* Small blocks */
+/* Defines color depending on background color */
+body {
+  font-family: "Times New Roman"; }
+
+.main-block {
+  background-color: #fe0000;
+  width: 500px;
+  height: 500px;
+  float: left;
+  margin: 5px;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center; }
+  .main-block div {
+    font-size: .8em; }
+
+.main-block:nth-child(1), .main-block:nth-child(2) {
+  position: relative; }
+  .main-block:nth-child(1) p, .main-block:nth-child(2) p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.main-block:nth-child(2) p {
+  width: 100%; }
+
+.main-block:nth-child(3) {
+  position: relative; }
+  .main-block:nth-child(3) div:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    background-color: #008001;
+    margin-left: calc(500px - 100px); }
+  .main-block:nth-child(3) p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+  .main-block:nth-child(3) div:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    background-color: #808080;
+    margin-top: calc(500px - 2 * 100px);
+    margin-right: calc(500px - 100px); }
+
+.main-block:nth-child(4) {
+  position: relative; }
+  .main-block:nth-child(4) div:nth-child(1) {
+    width: 100px;
+    height: 150px;
+    background-color: #fff;
+    color: #000;
+    display: table-cell;
+    vertical-align: middle; }
+  .main-block:nth-child(4) div:nth-child(2) {
+    width: 100px;
+    height: 150px;
+    background-color: #008001;
+    margin-left: calc(500px - 100px);
+    margin-top: -150px; }
+  .main-block:nth-child(4) p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+  .main-block:nth-child(4) div:nth-child(4) {
+    width: 100px;
+    height: 150px;
+    background-color: #808080;
+    color: #000;
+    margin-top: calc(200px); }
+  .main-block:nth-child(4) div:nth-child(5) {
+    width: 100px;
+    height: 150px;
+    background-color: #000;
+    color: #fff;
+    margin-top: -150px;
+    margin-left: calc(500px - 100px); }
+
+/*# sourceMappingURL=ex01.css.map */
