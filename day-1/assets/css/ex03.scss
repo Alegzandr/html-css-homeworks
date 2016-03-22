@@ -52,7 +52,9 @@ nav a {
 nav a:hover,
 nav a:focus,
 nav a:active {
-  color: rgb(50, 50, 50);
+  color: #e3e3e3;
+  background-color: #f2404e;
+  transition: all ease 1s;
 }
 
 /* style sub level links */
