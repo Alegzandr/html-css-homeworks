@@ -79,7 +79,35 @@ section.login {
 
     a {
       text-decoration: none;
-      color: # #666e9d;
+      color: #666e9d;
     }
+  }
+}
+
+/* Modal window */
+.popup {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .7);
+  opacity: 1;
+  position: relative;
+  animation: fadein 1s;
+
+  div {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #cecece;
+    padding: 40px;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
