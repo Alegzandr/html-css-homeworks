@@ -72,7 +72,7 @@
             <label for="mail">Inscrivez-vous à la <span>newsletter</span></label>
             <br>
             <input type="email" name="mail" id="mail">
-            <input type="submit">
+            <input type="submit" value="S'abonner">
         </form>
     </section>
 
@@ -98,44 +98,50 @@
 </main>
 
 <footer class="clearfix">
-    <section>
-        <h3>Archive 18-20</h3>
-        <ul>
-            <li><a href="#">Mode</a></li>
-            <li><a href="#">Edition</a></li>
-            <li><a href="#">Lifestyle</a></li>
-        </ul>
-    </section>
-    <section>
-        <h3>Infos</h3>
-        <ul>
-            <li><a href="#">Presse</a></li>
-            <li><a href="#">Agenda</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </section>
-    <section>
-        <h3>Suivez-nous</h3>
-        <form action="#" method="post" name="newsletter-footer">
-            <label for="mail-footer">Inscrivez-vous à la newsletter</label>
-            <input type="email" name="mail" id="mail-footer">
-            <input type="submit">
-        </form>
-        <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-soundcloud"></i></a></li>
-        </ul>
-    </section>
+    <table>
+        <tr>
+            <th>Archive 18-20</th>
+            <th>Infos</th>
+            <th>Suivez-nous</th>
+        </tr>
+        <tr>
+            <td><a href="#">Mode</a></td>
+            <td><a href="#">Presse</a></td>
+            <td rowspan="3">
+                <form action="#" method="post" name="newsletter-footer">
+                    <label for="mail-footer">Inscrivez-vous à la newsletter</label>
+                    <br>
+                    <input type="email" name="mail" id="mail-footer">
+                    <input type="submit" value="S'abonner">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="#">Edition</a></td>
+            <td><a href="#">Agenda</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">Lifestyle</a></td>
+            <td><a href="#">Blog</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><a href="#">Contact</a></td>
+            <td>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-soundcloud"></i></a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 
-    <section>
-        <p>
-            2015 &copy; mentions légales -
-            <a href="#">plan du site</a>
-        </p>
-    </section>
+    <div>
+        2015 &copy; mentions légales -
+        <a href="#">plan du site</a>
+    </div>
 </footer>
 
 <script src="assets/js/section.js"></script>

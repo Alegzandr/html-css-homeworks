@@ -82,6 +82,11 @@ table {
   src: url(../fonts/aileron-italic.otf);
 }
 
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url(../fonts/myriadpro-regular.otf);
+}
+
 /* Styles */
 
 .clearfix {
@@ -251,4 +256,45 @@ main {
 
 ul > li {
   display: inline-block;
+}
+
+footer {
+  margin-top: 25px;
+  border-top: 1px solid $secondary-color;
+  padding-top: 10px;
+
+  table {
+    width: 100%;
+    text-align: center;
+
+    tr th, td {
+      width: 33.33%;
+    }
+
+    tr th {
+      font-family: "Stanley Poster", sans-serif;
+      font-size: 1.1em;
+      padding-bottom: 20px;
+    }
+
+    tr td {
+      font-family: "Founders Grotesk Regular", sans-serif;
+      font-size: 1.1em;
+    }
+  }
+
+  div {
+    font-family: "Myriad Pro Regular";
+    font-size: .9em;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid $secondary-color;
+    margin-top: 10px;
+  }
+
+  a, a:active {
+    text-decoration: none;
+    color: $font-color;
+  }
 }
