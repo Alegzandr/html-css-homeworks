@@ -1,8 +1,8 @@
 @import "variables";
 
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -25,46 +25,230 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* Fonts import */
+
+@font-face {
+  font-family: "Founders Grotesk Regular";
+  src: url(../fonts/foundersgrotesk-regular.otf);
+}
+
+@font-face {
+  font-family: "Stanley Poster";
+  src: url(../fonts/stanleyposter-regular.otf);
+}
+
+@font-face {
+  font-family: "Aileron Regular";
+  src: url(../fonts/aileron-regular.otf);
+}
+
+@font-face {
+  font-family: "Aileron Bold";
+  src: url(../fonts/aileron-bold.otf);
+}
+
+@font-face {
+  font-family: "Aileron Italic";
+  src: url(../fonts/aileron-italic.otf);
+}
+
+/* Styles */
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 header, nav, main, footer {
   font-size: 1rem;
 }
 
-/* Mobile */
+header, nav {
+  font-family: "Founders Grotesk", sans-serif;
+  position: relative;
+  border: 1px solid $secondary-color;
 
+  ul {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 
+    li {
+      display: inline-block;
+      padding: 0 10px;
 
-/* Tablet */
-
-@media (min-width: 641px) {
-
+      a, a:active {
+        color: $font-color;
+        text-decoration: none;
+        font-size: .9em;
+      }
+    }
+  }
 }
 
-/* Mobile */
+header, nav, main, footer {
+  width: 80vw;
+  padding: 0 10vw;
+}
 
-@media (min-width: 1025px) {
-  
+header {
+  height: 45px;
+
+  ul {
+    li:nth-child(1) {
+      border-right: 1px dotted $primary-color;
+    }
+  }
+
+  ul:nth-child(1) {
+    li {
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+
+  ul:nth-child(2) {
+    right: 10vw;
+  }
+}
+
+nav {
+  margin-top: 200px;
+  height: 60px;
+
+  ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 60vw;
+
+    li {
+      text-transform: uppercase;
+    }
+
+    li:not(:last-child) {
+      border-right: 1px dotted $primary-color;
+    }
+  }
+}
+
+main {
+  margin-top: 5px;
+
+  section {
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  section > img {
+    width: 100%;
+  }
+
+  section:not(:first-child) {
+    width: 33%;
+    width: calc(33.33% - 14px);
+  }
+
+  section:nth-child(5) {
+    line-height: 1.1;
+  }
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: $bg-color;
+    font-family: "Stanley Poster", sans-serif;
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    line-height: 1.8;
+  }
+
+  label, h3 {
+    font-family: "Aileron Regular", sans-serif;
+    color: $bg-color;
+    font-size: 1.1em;
+  }
+
+  label > span {
+    font-family: "Aileron Bold", sans-serif;
+  }
+
+  section:not(:first-child) {
+    float: left;
+  }
+
+  section:not(:nth-child(-n+2)) {
+    margin-left: 20px;
+  }
+
+  h4 {
+    font-family: "Aileron Italic", sans-serif;
+    color: $bg-color;
+    font-size: 1.1em;
+  }
+
+  a, a:active {
+    color: $second-font-color;
+    font-size: 1.1em;
+  }
+}
+
+ul > li {
+  display: inline-block;
 }

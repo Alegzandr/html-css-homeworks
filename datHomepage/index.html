@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tulie Lifestyle</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -16,8 +15,7 @@
     </ul>
     <ul>
         <li>
-            <a href="#"><i class="fa fa-shopping-bag"></i></a>
-            0
+            <a href="#"><i class="fa fa-shopping-bag"></i>&nbsp;&nbsp;0</a>
         </li>
         <li><a href="#"><i class="fa fa-search"></i></a></li>
     </ul>
@@ -57,42 +55,49 @@
     </ul>
 </nav>
 
-<main role="main">
+<main role="main" class="clearfix">
     <section class="container">
-        <img src="assets/img/mode.png" alt="Mode">
+        <img src="assets/img/mode.jpg" alt="Mode">
         <h2>Mode</h2>
     </section>
 
     <section>
-        <img src="assets/img/food.png" alt="Restaurant">
+        <img src="assets/img/food.jpg" alt="Restaurant">
         <h2>Restaurant</h2>
     </section>
-    <section>
-        <form action="#" method="post" name="newsletter-footer">
-            <label for="mail-footer">Inscrivez-vous à la newsletter</label>
-            <input type="email" name="mail" id="mail-footer">
 
+    <section>
+        <img src="assets/img/newsletter.png" alt="Newsletter">
+        <form action="#" method="post" name="newsletter">
+            <label for="mail">Inscrivez-vous à la <span>newsletter</span></label>
+            <br>
+            <input type="email" name="mail" id="mail">
             <input type="submit">
         </form>
     </section>
-    <section>
-        <img src="assets/img/newsletter.png" alt="Newsletter">
-        <h3>Découvrez nos univers</h3>
-        <h4>sur les réseaux sociaux</h4>
-        <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-soundcloud"></i></a></li>
-        </ul>
-    </section>
+
     <section>
         <img src="assets/img/book.jpg" alt="Galerie d'art">
         <h2>Galerie d'art</h2>
     </section>
+
+    <section>
+        <img src="assets/img/social.png" alt="Réseaux sociaux">
+        <div>
+            <h3>Découvrez nos univers</h3>
+            <h4>sur les réseaux sociaux</h4><br>
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </section>
 </main>
 
-<footer>
+<footer class="clearfix">
     <section>
         <h3>Archive 18-20</h3>
         <ul>
@@ -111,11 +116,10 @@
         </ul>
     </section>
     <section>
-        <h3>Suivez - nous</h3>
+        <h3>Suivez-nous</h3>
         <form action="#" method="post" name="newsletter-footer">
             <label for="mail-footer">Inscrivez-vous à la newsletter</label>
             <input type="email" name="mail" id="mail-footer">
-
             <input type="submit">
         </form>
         <ul>
@@ -134,7 +138,7 @@
     </section>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="assets/js/forms.js"></script>
+<script src="assets/js/section.js"></script>
+
 </body>
 </html>
