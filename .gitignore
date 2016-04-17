@@ -5,3 +5,5 @@ Thumbs.db
 *.sublime-.*
 .*.swp
 .swp
+.sass-cache.*
+.css.map
