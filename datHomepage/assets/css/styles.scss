@@ -87,6 +87,11 @@ table {
   src: url(../fonts/myriadpro-regular.otf);
 }
 
+@font-face {
+  font-family: "Aileron Black";
+  src: url(../fonts/aileron-black.otf);
+}
+
 /* Styles */
 
 .clearfix {
@@ -156,6 +161,7 @@ header {
 nav {
   margin-top: 200px;
   height: 60px;
+  font-weight: 600;
 
   ul {
     position: absolute;
@@ -175,6 +181,10 @@ nav {
   }
 }
 
+label {
+  cursor: pointer;
+}
+
 main {
   margin-top: 5px;
 
@@ -182,6 +192,10 @@ main {
     margin-top: 20px;
     text-align: center;
     position: relative;
+
+    h2, h3, h4 {
+      cursor: default;
+    }
   }
 
   section > img {
@@ -228,9 +242,11 @@ main {
     font-family: "Aileron Regular", sans-serif;
     color: $bg-color;
     font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: .8px;
   }
 
-  label > span {
+  h3 > label {
     font-family: "Aileron Bold", sans-serif;
   }
 
@@ -296,5 +312,33 @@ footer {
   a, a:active {
     text-decoration: none;
     color: $font-color;
+  }
+}
+
+.social {
+  li:not(:first-child) {
+    margin-left: 5px;
+  }
+}
+
+form {
+  input[type="email"] {
+    display: inline-block;
+    height: 38px;
+    width: 250px;
+    border: 0;
+  }
+
+  input[type="submit"] {
+    display: inline-block;
+    height: 40px;
+    width: 105px;
+    font-family: "Aileron Black", sans-serif;
+    font-size: .8em;
+    color: $bg-color;
+    background-color: #a9c7bf;
+    border: 0;
+    text-transform: uppercase;
+    margin-left: -5px;
   }
 }
